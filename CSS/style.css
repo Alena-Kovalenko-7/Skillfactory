@@ -1,4 +1,33 @@
-main {
+.breadcrumb {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0; 
+  padding: 0;
+}
+
+.breadcrumb ul {
+  margin: 0;
+}
+
+.breadcrumb li {
+  float: left;
+  line-height: 30px;
+  margin-left: 20px;
+  color: #777;
+}
+
+.breadcrumb li a {
+  color: #333333B2;
+  text-decoration: none;
+}
+
+/* .breadcrumb li+li:before {
+  padding: 8px;
+  color:#333333B2;
+  content: "/\00a0";
+} */
+
+html {
   width: 1200px;
   margin: 0 auto;
 }
@@ -22,7 +51,7 @@ main {
 .blog > div > .picture {
   background-position: top;
   background-repeat: no-repeat;
-  /* height: 260px; */
+  height: 260px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -40,12 +69,13 @@ main {
 
 .blog > div > .text p {
   margin: 0px;
-  font-style: Montserrat;
+  font-family: Montserrat;
 }
 
 .font_1 {
   font-size: 18px;
   line-height: 20px;
+
 }
 .font_2 {
   font-size: 12px;
@@ -151,3 +181,24 @@ main {
 .blog_eight .picture {
   background-image: url(../images/image_8.png);
 }
+
+.next_button {
+    margin: 0 auto;
+    display: block;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    background: #35B3A9;
+    transition: 0.2s;
+    font-family: Montserrat;
+    border-radius: 4px;
+    size: 16px;
+    width: 150px;
+    border: none;
+  } 
+
+  .next_button:hover { 
+    background: #35B3A9;
+    cursor: pointer;
+  }
