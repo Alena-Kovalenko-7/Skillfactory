@@ -4,6 +4,44 @@ body {
   font-family: Montserrat;
 }
 
+.head {
+  display: flex;
+  list-style-type: none;
+}
+
+.head #logo {
+  background-image: url(../images/logo.svg);
+  background-size: cover;
+  width: 50px;
+  height: 35px;
+}
+
+.head .menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.head button {
+  display: flex;
+  margin-left: auto;
+  font-weight: 700;
+  color: #03B2A5;
+  text-decoration: none;
+  background: #E3F5F5;
+  transition: 0.2s;
+  size: 16px;
+  border: none;
+  width: 230px;
+  padding: 14px 20px;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+.head button:hover { 
+  background: #E3F5F5;
+  cursor: pointer;
+}
+
 h1 {
   font-size: 48px;
   line-height: 56px;
