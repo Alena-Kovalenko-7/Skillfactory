@@ -1,6 +1,7 @@
 body {
   width: 1200px;
   margin: 0 auto;
+  font-family: Montserrat;
 }
 
 h1 {
@@ -10,35 +11,37 @@ h1 {
 }
 
 .breadcrumb {
-  display: inline-block;
+  display: flex;
   font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
   margin: 0; 
   padding: 0;
 }
 
-.breadcrumb ul {
-  margin-left: 0;
-  padding-left: 0;
-  list-style-type: ">";
-}
-
 .breadcrumb li {
+  display: flex;
   list-style-type: none;
-  float: left;
   line-height: 30px;
-  margin-left: 20px;
   color: #777;
 }
+
+.breadcrumb li:not(:first-child):before {
+  margin: 10px;
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-top: #777 solid 1px;
+  border-right: #777 solid 1px;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+} 
 
 .breadcrumb li a {
   color: #333333B2;
   text-decoration: none;
 }
-
-.breadcrumb li+li:before {
-  color:#333333B2;
-  content: quote(">");
-} 
 
 .filter {
   display: flex;
@@ -50,7 +53,6 @@ h1 {
   list-style-type: none;
   float: left;
   font-size: 14px;
-  font-family: Montserrat;
   font-weight: 600;
   line-height: 20px;
   border-color: #777;
@@ -92,7 +94,6 @@ h1 {
   list-style-type: none;
   width: fit-content;
   font-size: 14px;
-  font-family: Montserrat;
   font-weight: 600;
   line-height: 20px;
   border-color: #777;
@@ -140,7 +141,6 @@ h1 {
 
 .blog > div > .text p {
   margin: 0px;
-  font-family: Montserrat;
 }
 
 .font_1 {
@@ -205,7 +205,6 @@ h1 {
     padding: 12px 16px;
     background: #35B3A9;
     transition: 0.2s;
-    font-family: Montserrat;
     border-radius: 4px;
     size: 16px;
     width: 150px;
