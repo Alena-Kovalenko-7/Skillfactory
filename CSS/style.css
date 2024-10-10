@@ -278,9 +278,43 @@ h1 {
     size: 16px;
     width: 150px;
     border: none;
+    margin-top: 50px;
+    margin-bottom: 80px;
   } 
 
   .next_button:hover { 
     background: #35B3A9;
     cursor: pointer;
+  }
+
+  footer {
+    background-color: #2963A3;
+  }
+
+  .foot {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .foot_menu {
+    height: 240px;
+
+  }
+
+  .foot_copyright {
+    display: flex;
+    font-size: 14px;
+    padding: 14px 0;
+    position: relative;
+    border-top: #9D9D9D solid 1px;
+    color: #FFFFFF;
+    opacity: 70%;
+  }
+ 
+  .foot_copyright li{
+    list-style-type: none;
+  }
+
+  .foot_copyright li:not(:first-child) {
+    margin-left: 50px;
   }
