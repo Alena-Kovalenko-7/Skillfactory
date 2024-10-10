@@ -1,12 +1,20 @@
 body {
+  font-family: Montserrat;
+}
+
+header {
+  border-bottom: #EFF2F2 solid 2px;
+}
+
+main {
   width: 1200px;
   margin: 0 auto;
-  font-family: Montserrat;
 }
 
 .head {
   display: flex;
-  list-style-type: none;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .head #logo {
@@ -19,11 +27,34 @@ body {
 .head .menu {
   display: flex;
   list-style-type: none;
+  width: 704px;
+  font-weight: 700;
+  text-decoration: none;
+  size: 16px;
+  border: none;
+  padding: 12px 40px;
+  justify-content: space-around;
 }
+
+#material {
+  display: flex;
+}
+
+#material::after {
+  margin: 5px 10px;
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-top: black solid 1px;
+  border-right: black solid 1px;
+  transform: rotate(135deg);
+} 
 
 .head button {
   display: flex;
   margin-left: auto;
+  margin-bottom: 10px;
   font-weight: 700;
   color: #03B2A5;
   text-decoration: none;
