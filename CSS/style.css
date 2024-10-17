@@ -199,6 +199,8 @@ h1 {
 
 .blog > div > .picture {
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -219,7 +221,7 @@ h1 {
 .font_1 {
   font-size: 18px;
   line-height: 26px;
-
+  font-weight: 700;
 }
 .font_2 {
   font-size: 12px;

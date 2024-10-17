@@ -54,16 +54,45 @@
     }
     .filter li {
         align-items: center;
-        border-radius: 2em;
+        border-radius: 3em;
         padding: 0 1em;
     }
     .icon {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         margin-right: 15px;
     }
     .filter li a { 
-        font-size: 2em;
+        font-size: 3em;
         line-height: 2em;
+    }
+    #main_blog {
+        display: block;
+    }
+    .blog > div {
+        aspect-ratio: 288/484;
+        grid-template-rows: 43% 1fr;
+        border: #DEDEDE solid 2px;
+        border-radius: 40px;
+        margin-bottom: 40px;
+    
+    }
+    .blog > div > .text {
+        display: block;
+      }
+    #blog_one {
+        background-image: url(../images/image_1_min.png);
+    }
+    .font_1 {
+        font-size: 5vw;
+        line-height: 10vw;
+    }
+    .font_2 {
+        font-size: 2vw;
+        line-height: 10vw;
+    }
+    .font_3 {
+        font-size: 3vw;
+        line-height: 6vw;
     }
 }
