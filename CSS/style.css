@@ -18,6 +18,10 @@ main {
 
 h1 {
   font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 0px;
   padding-right: 35px;
 }
 
@@ -83,19 +87,8 @@ h1 {
   cursor: pointer;
 }
 
-h1 {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 700;
-  margin-top: 40px;
-  margin-bottom: 0px;
-}
-
 .breadcrumb {
   display: flex;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
   margin: 0; 
   padding: 0;
 }
@@ -104,7 +97,6 @@ h1 {
   display: flex;
   list-style-type: none;
   line-height: 30px;
-  color: #777;
 }
 
 .breadcrumb li:not(:first-child):before {
@@ -131,17 +123,10 @@ h1 {
 
 .filter li {
   display: flex;
-  list-style-type: none;
-  float: left;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  border-color: #777;
   border: #777 solid 1px;
   border-radius: 24px;
   padding: 6px;
-  margin: 2px 12px 2px 0;
-  position: relative;
+  margin-right: 12px;
 }
 
 .filter li:active { 
@@ -149,12 +134,23 @@ h1 {
   cursor: pointer;
 }
 
-#icon_smile {
-  background-image: url(../images/smile.svg);
+.filter li a { 
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.icon {
   background-size: contain;
+  background-repeat: no-repeat;
   width: 18px;
   height: 18px;
   margin-right: 5px;
+}
+
+#icon_smile {
+  background-image: url(../images/smile.svg);
 }
 
 #filter_3 {
@@ -164,10 +160,6 @@ h1 {
 
 .icon_horse {
   background-image: url(../images/icon.svg);
-  background-size: contain;
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
 }
 
 .self {
@@ -226,7 +218,7 @@ h1 {
 
 .font_1 {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 26px;
 
 }
 .font_2 {

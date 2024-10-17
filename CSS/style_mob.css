@@ -1,0 +1,69 @@
+@media screen and (max-device-width: 768px) {
+    body {
+        margin: 0 48px;
+    }
+    .head {
+        width: 100%;
+        aspect-ratio: 320/56;
+        align-items: center;
+    }
+    .head #logo {
+        width: 144px;
+        height: 102px;
+    }
+    .head .menu {
+        width: 54px;
+        height: 54px;
+        margin-left: auto;
+        background-image: url(../images/vector.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 0;
+    }
+    .head .menu div, #material {
+        display: none;
+    }
+    .head button {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    .breadcrumb {
+        margin: 48px 0;
+    }
+    .breadcrumb li a {
+        font-size: 2.5em;
+        line-height: 0.7em;
+    }
+    .breadcrumb li:not(:first-child):before {
+        margin: 0 30px;
+        width: 18px;
+        height: 18px;
+        border-top: #777 solid 2px;
+        border-right: #777 solid 2px;
+    } 
+    h1 {
+        margin: 0;
+        padding-right: 0;
+        font-size: 5em;
+        line-height: normal;
+    }
+    .filter {
+        margin: 48px 0;
+    }
+    .filter li {
+        align-items: center;
+        border-radius: 2em;
+        padding: 0 1em;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+    .filter li a { 
+        font-size: 2em;
+        line-height: 2em;
+    }
+}
