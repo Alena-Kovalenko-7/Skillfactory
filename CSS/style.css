@@ -470,34 +470,36 @@ h1 {
   .content {
     display: grid;
     grid-template-areas:
-      "main main sidebar"
-      "reviews reviews reviews"
-      "footer footer footer";
-    grid-template-columns: 2fr 1fr;
-    gap: 1em;
+      "main sidebar"
+      "reviews reviews";
+    grid-template-columns: 1fr 282px;
   }
     
-  .content_sidebar {
+  aside {
     grid-area: sidebar;
-    width: 300px;
-    justify-content: center;
     margin-top: 15px;
+  }
+
+  aside > div {
+    display: inline-block ;
+    width: 282px;
+    height: 512px;
+    border-radius: 16px;
+  }
+
+  aside > div:not(:first-child) {
+    margin-top: 30px;
   }
   
   .content_sidebar_block_1 {
-    width: 282px;
-    height: 512px;
     text-align: center;
     background-color: #E6F0FD;
-    border-radius: 16px;
-    margin-top: 30px;
   }
 
   #people_3 {
-    background-image: url(../images/3_people.svg);
+    background-image: url(../images/3_people.png);
     width: 257px;
     height: 206px;
-    margin-top: 50px;
     margin: 30px auto;
   }
 
@@ -539,31 +541,34 @@ h1 {
   }
 
   .content_sidebar_block_2 {
-    width: 282px;
-    height: 512px;
+    position: relative;
     text-align: center;
-    border-radius: 16px;
-    margin-top: 30px;
     padding-top: 1px;
     box-shadow: 0px 30px 50px 0px #EFF5FB;
     border: 1px solid #DEDEDE
   }
 
   #foto_liliya {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 120px;
+    height: 120px;
     background-image: url(../images/liliya.png);
-    margin: 20px auto; 
+    background-position: center;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .content_sidebar_block_2_foto {
-    width: 120px;
     height: 120px;
-    border-radius: 50%;
-    background-size: auto 120px;
+    margin: 20px auto; 
   }
 
   .content_sidebar_texts {
     width: 250px;
-    height: 285px;
+    height: 300px;
     text-align: center;
     margin: 20px auto; 
   }
@@ -666,22 +671,19 @@ h1 {
 
   #content_sidebar_block_3 {
     background-image: url(../images/gifts_1.svg);
-    width: 282px;
     height: 292px;
-    margin-top: 30px;
-    border-radius: 16px;
   }
 
   .content_sidebar_block_4 {
     display: grid;
-    width: 282px;
     height: 304px;
-    border-radius: 16px;
-    border: 1px solid #DEDEDE;
-    margin-top: 30px;    
+    border: 1px solid #DEDEDE; 
+    background-image: url(../images/gift_3.svg), url(../images/gift_2.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
   }
 
-  .content_sidebar_text_6 {
+  .content_sidebar_text_10 {
     width: 218px;
     height: 240px;
     margin: 0 auto;
@@ -733,26 +735,6 @@ h1 {
     align-items: end;
     margin-top: 22px;
   }
-
-  .content_sidebar_block_4_gifts {
-    
-  }
-
-
-  #gift_2 {
-    background-image: url(../images/gift_2.svg);
-    width: 112px;
-    height: 106px;
-    background-repeat:no-repeat;
-  }
-  #gift_3 {
-    background-image: url(../images/gift_3.svg);
-    width: 137px;
-    height: 121px;
-    background-repeat:no-repeat;
-  }
-
-
 
 
 
@@ -994,11 +976,11 @@ h1 {
   height: 400px;
   border-top: #DEDEDE solid 1px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .content_review_keep {
   width: 348px;
-  height: 188px;
 }
 
 #problem {  
@@ -1006,8 +988,8 @@ h1 {
   font-weight: 700;
   line-height: 56px;
   text-align: left;
-  margin-top: 50px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #help {
@@ -1041,8 +1023,7 @@ h1 {
 
 #people {
   background-image: url(../images/2_people.svg);
-  width: 448.89px;
-  height: 410.15px;
   background-repeat: no-repeat;
-  margin: 30px 90px 0 0;
+  width: 520px;
+  height: 330px;
 }
