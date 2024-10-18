@@ -126,7 +126,10 @@ h1 {
   border: #777 solid 1px;
   border-radius: 24px;
   padding: 6px;
-  margin-right: 12px;
+}
+
+.filter li:not(:first-child) {
+  margin-left: 12px;
 }
 
 .filter li:active { 
@@ -164,6 +167,7 @@ h1 {
 
 .self {
   display: flex;
+  /* position: relative; */
   list-style-type: none;
   width: fit-content;
   font-size: 14px;
@@ -171,9 +175,8 @@ h1 {
   line-height: 20px;
   border-color: #777;
   border-radius: 24px;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px;
   margin: 8px 12px;
-  position: relative;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -192,29 +195,30 @@ h1 {
   display: grid;
   grid-template-rows: 260px 1fr;
   grid-template-columns: 1fr;
-  border:#DEDEDE solid 1px;
-  border-radius: 10px;
-  box-sizing: border-box;
 }
 
 .blog > div > .picture {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .blog > div > .text {
   display: grid;
-  margin: 16px;
+  padding: 16px;
+  border:#DEDEDE solid 1px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .blog > div > .text .text_2 {
   align-self: end;
 }
 
-.blog > div > .text p {
+.text p {
   margin: 0px;
 }
 

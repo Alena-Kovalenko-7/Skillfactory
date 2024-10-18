@@ -1,19 +1,20 @@
 @media screen and (max-device-width: 768px) {
     body {
-        margin: 0 48px;
+        margin: 0;
     }
     .head {
-        width: 100%;
-        aspect-ratio: 320/56;
+        height: 56px;
+        width: 288px;
+        margin: 0 auto;
         align-items: center;
     }
     .head #logo {
-        width: 144px;
-        height: 102px;
+        width: 48px;
+        height: 34px;
     }
     .head .menu {
-        width: 54px;
-        height: 54px;
+        width: 18px;
+        height: 18px;
         margin-left: auto;
         background-image: url(../images/vector.svg);
         background-size: contain;
@@ -27,72 +28,83 @@
         display: none;
     }
     main {
-        width: 100%;
+        width: 288px;
+        margin: 0 auto;
     }
-    .breadcrumb {
-        margin: 48px 0;
+    .breadcrumb, .filter {
+        margin: 24px 0;
     }
     .breadcrumb li a {
-        font-size: 2.5em;
-        line-height: 0.7em;
+        font-size: 12px;
+        line-height: 18px;
     }
     .breadcrumb li:not(:first-child):before {
-        margin: 0 30px;
-        width: 18px;
-        height: 18px;
-        border-top: #777 solid 2px;
-        border-right: #777 solid 2px;
+        margin: 4px 12px;
+        width: 6px;
+        height: 6px;
     } 
     h1 {
         margin: 0;
         padding-right: 0;
-        font-size: 5em;
-        line-height: normal;
-    }
-    .filter {
-        margin: 48px 0;
+        font-size: 24px;
+        line-height: 32px;
     }
     .filter li {
         align-items: center;
         border-radius: 3em;
-        padding: 0 1em;
+        padding: 6px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .filter li:not(:first-child) {
+        margin-left: 8px;
     }
     .icon {
-        width: 50px;
-        height: 50px;
-        margin-right: 15px;
-    }
-    .filter li a { 
-        font-size: 3em;
-        line-height: 2em;
+        width: 18px;
+        height: 18px;
     }
     #main_blog {
         display: block;
     }
-    .blog > div {
-        aspect-ratio: 288/484;
-        grid-template-rows: 43% 1fr;
-        border: #DEDEDE solid 2px;
-        border-radius: 40px;
-        margin-bottom: 40px;
-    
+    .blog {
+        margin-bottom: 0;   
     }
+    .blog > div {
+        display: block;
+        height: 500px;
+    }
+    .blog > div:not(:first-child) {
+        margin-top: 20px;
+    }
+    .blog > div > .picture {
+        height: 206px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
     .blog > div > .text {
         display: block;
-      }
+        padding: 16px;
+        border: #DEDEDE solid 1px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
     #blog_one {
         background-image: url(../images/image_1_min.png);
     }
-    .font_1 {
-        font-size: 5vw;
-        line-height: 10vw;
+    .text .font_1 {
+        font-size: 18px;
+        line-height: 26px;
     }
-    .font_2 {
-        font-size: 2vw;
-        line-height: 10vw;
+    .text .font_2 {
+        margin: 5px 0;
+        font-size: 12px;
+        line-height: 18px;
     }
-    .font_3 {
-        font-size: 3vw;
-        line-height: 6vw;
+    .text .font_3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .text p:last-child {
+        margin-bottom: 0;
     }
 }
