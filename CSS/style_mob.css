@@ -64,20 +64,15 @@
         height: 18px;
     }
     #main_blog {
-        display: block;
+        grid-template-columns: 1fr;
     }
     .blog {
-        margin-bottom: 0;   
+        margin-bottom: 0;
     }
     .blog > div {
-        display: block;
-        height: 500px;
-    }
-    .blog > div:not(:first-child) {
-        margin-top: 20px;
+        grid-template-rows: 206px 1fr;
     }
     .blog > div > .picture {
-        height: 206px;
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
       }
@@ -106,5 +101,10 @@
     }
     .text p:last-child {
         margin-bottom: 0;
+    }
+    #other_blog {
+        grid-template-rows: 499px;
+        grid-template-columns: 1fr;
+        margin-top: 24px;
     }
 }
