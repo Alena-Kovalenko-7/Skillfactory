@@ -1,5 +1,27 @@
 body {
   font-family: Montserrat;
+  position: relative;
+  margin: 0;
+}
+
+#orange_circle_big {
+  background-image: url(../images/pink_circule_2.svg);
+  width: 686px;
+  height: 606px;
+  position: absolute;
+  right: -476px;
+  top: 40%;
+  background-repeat: no-repeat;
+}
+
+#orange_circle_small {
+  background-image: url(../images/orange_circle_small.svg);
+  width: 272px;
+  height: 240px;
+  position: absolute;
+  right: -199px;
+  bottom: 7%;
+  background-repeat: no-repeat;
 }
 
 body a {
