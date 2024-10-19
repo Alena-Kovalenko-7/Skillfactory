@@ -40,6 +40,10 @@ main {
 
 h1 {
   font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 0px;
   padding-right: 35px;
 }
 
@@ -105,19 +109,8 @@ h1 {
   cursor: pointer;
 }
 
-h1 {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 700;
-  margin-top: 40px;
-  margin-bottom: 0px;
-}
-
 .breadcrumb {
   display: flex;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
   margin: 0; 
   padding: 0;
 }
@@ -126,7 +119,6 @@ h1 {
   display: flex;
   list-style-type: none;
   line-height: 30px;
-  color: #777;
 }
 
 .breadcrumb li:not(:first-child):before {
@@ -153,17 +145,13 @@ h1 {
 
 .filter li {
   display: flex;
-  list-style-type: none;
-  float: left;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  border-color: #777;
   border: #777 solid 1px;
   border-radius: 24px;
   padding: 6px;
-  margin: 2px 12px 2px 0;
-  position: relative;
+}
+
+.filter li:not(:first-child) {
+  margin-left: 12px;
 }
 
 .filter li:active { 
@@ -171,12 +159,23 @@ h1 {
   cursor: pointer;
 }
 
-#icon_smile {
-  background-image: url(../images/smile.svg);
+.filter li a { 
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.icon {
   background-size: contain;
+  background-repeat: no-repeat;
   width: 18px;
   height: 18px;
   margin-right: 5px;
+}
+
+#icon_smile {
+  background-image: url(../images/smile.svg);
 }
 
 #filter_3 {
@@ -186,14 +185,11 @@ h1 {
 
 .icon_horse {
   background-image: url(../images/icon.svg);
-  background-size: contain;
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
 }
 
 .self {
   display: flex;
+  /* position: relative; */
   list-style-type: none;
   width: fit-content;
   font-size: 14px;
@@ -201,9 +197,8 @@ h1 {
   line-height: 20px;
   border-color: #777;
   border-radius: 24px;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px;
   margin: 8px 12px;
-  position: relative;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -222,34 +217,37 @@ h1 {
   display: grid;
   grid-template-rows: 260px 1fr;
   grid-template-columns: 1fr;
-  border:#DEDEDE solid 1px;
-  border-radius: 10px;
-  box-sizing: border-box;
 }
 
 .blog > div > .picture {
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .blog > div > .text {
   display: grid;
-  margin: 16px;
+  padding: 16px;
+  border:#DEDEDE solid 1px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .blog > div > .text .text_2 {
   align-self: end;
 }
 
-.blog > div > .text p {
+.text p {
   margin: 0px;
 }
 
 .font_1 {
   font-size: 18px;
-  line-height: 20px;
-
+  line-height: 26px;
+  font-weight: 700;
 }
 .font_2 {
   font-size: 12px;

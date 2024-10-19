@@ -1,0 +1,110 @@
+@media screen and (max-device-width: 768px) {
+    body {
+        margin: 0;
+    }
+    .head {
+        height: 56px;
+        width: 288px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .head #logo {
+        width: 48px;
+        height: 34px;
+    }
+    .head .menu {
+        width: 18px;
+        height: 18px;
+        margin-left: auto;
+        background-image: url(../images/vector.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 0;
+    }
+    .head .menu div, #material {
+        display: none;
+    }
+    .head button {
+        display: none;
+    }
+    main {
+        width: 288px;
+        margin: 0 auto;
+    }
+    .breadcrumb, .filter {
+        margin: 24px 0;
+    }
+    .breadcrumb li a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .breadcrumb li:not(:first-child):before {
+        margin: 4px 12px;
+        width: 6px;
+        height: 6px;
+    } 
+    h1 {
+        margin: 0;
+        padding-right: 0;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .filter li {
+        align-items: center;
+        border-radius: 3em;
+        padding: 6px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .filter li:not(:first-child) {
+        margin-left: 8px;
+    }
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+    #main_blog {
+        display: block;
+    }
+    .blog {
+        margin-bottom: 0;   
+    }
+    .blog > div {
+        display: block;
+        height: 500px;
+    }
+    .blog > div:not(:first-child) {
+        margin-top: 20px;
+    }
+    .blog > div > .picture {
+        height: 206px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+    .blog > div > .text {
+        display: block;
+        padding: 16px;
+        border: #DEDEDE solid 1px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    #blog_one {
+        background-image: url(../images/image_1_min.png);
+    }
+    .text .font_1 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .text .font_2 {
+        margin: 5px 0;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .text .font_3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .text p:last-child {
+        margin-bottom: 0;
+    }
+}
