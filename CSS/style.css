@@ -6,20 +6,20 @@ body {
 
 #orange_circle_big {
   background-image: url(../images/pink_circule_2.svg);
-  width: 686px;
+  width: 210px;
   height: 606px;
   position: absolute;
-  right: -476px;
+  right: 0;
   top: 40%;
   background-repeat: no-repeat;
 }
 
 #orange_circle_small {
   background-image: url(../images/orange_circle_small.svg);
-  width: 272px;
+  width: 73px;
   height: 240px;
   position: absolute;
-  right: -199px;
+  right: 0px;
   bottom: 7%;
   background-repeat: no-repeat;
 }
@@ -298,7 +298,7 @@ h1 {
 }
 
 .next_button {
-    margin: 0 auto;
+    margin: 50px auto 80px auto;
     display: block;
     font-weight: 700;
     color: white;
@@ -310,8 +310,6 @@ h1 {
     size: 16px;
     width: 150px;
     border: none;
-    margin-top: 50px;
-    margin-bottom: 80px;
   } 
 
   .next_button:hover { 
@@ -329,35 +327,36 @@ h1 {
   }
 
   .foot_menu {
-    display: flex;
-    height: 240px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 0 16px 0;
+  }
+
+  .foot_menu p {
+    margin: 0;
   }
 
   .foot_menu_info {
     display: grid;
-    grid-template-rows: repeat(5, 35px);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(2, 1fr);
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    text-align: left;
-    height: 225px;
-    width: 400px;
+    height: 184px;
+    width: 310px;
     grid-gap: 5px;
     color: #FFFFFF;
-    padding-top: 25px;
   }
 
   .foot_menu_news {
     color: #FFFFFF;
+    justify-self: center;
     height: 170px;
-    width: 486px;
-    text-align: left;
-    padding-top: 25px;
   }
 
-  #news_text {
-    height: 52px;
+  p#news_text {
     width: 356px;
     font-size: 18px;
     font-weight: 700;
@@ -376,6 +375,7 @@ h1 {
     position: relative;
     height: 48px;
     width: 384px;
+    margin: 10px 0;
   }
 
   .foot_menu_news form input {
@@ -386,7 +386,7 @@ h1 {
   }
 
   .foot_menu_news form input[type=email] {
-    width: 100%;
+    width: 100%;    
   }
   
   .foot_menu_news form input[type=submit] {
@@ -402,14 +402,12 @@ h1 {
   }
 
   input::placeholder {
-      font-family: Montserrat;
-      font-size: 14px;
-      padding-left: 20px;
+    font-size: 14px;
+    padding-left: 20px;
   }
 
   .foot_menu_link {
-    padding-top: 40px;
-    margin-left: auto;
+    justify-self: end;
   }
 
   .foot_menu_link div {
@@ -467,14 +465,14 @@ h1 {
     cursor: pointer;
   }
 
-  .foot_copyright {
+  ul.foot_copyright {
     display: flex;
     font-size: 14px;
     padding: 14px 0;
-    position: relative;
     border-top: #9D9D9D solid 1px;
     color: #FFFFFF;
     opacity: 70%;
+    margin: 0;
   }
  
   .foot_copyright li{
