@@ -63,13 +63,14 @@
         width: 18px;
         height: 18px;
     }
-    #main_blog {
+    .blog {
         grid-template-columns: 1fr;
     }
-    .blog {
-        margin-bottom: 0;
+    .blog > div:nth-child(-n+2) {
+        grid-column-end: span 1;
     }
     .blog > div {
+        grid-column-end: span 1;
         grid-template-rows: 206px 1fr;
     }
     .blog > div > .picture {
@@ -101,11 +102,6 @@
     }
     .text p:last-child {
         margin-bottom: 0;
-    }
-    #other_blog {
-        grid-template-rows: 499px;
-        grid-template-columns: 1fr;
-        margin-top: 24px;
     }
     .next_button {
         margin-top: 30px;

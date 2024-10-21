@@ -204,18 +204,20 @@ section h1 {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-#main_blog {
+.blog {
   display: grid;
   grid-template-rows: 499px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 475px;
   grid-gap: 24px;
 }
 
-.blog {
-  margin-bottom: 24px;
+.blog > div:nth-child(-n+2) {
+  grid-column-end: span 3;
 }
 
 .blog > div {
+  grid-column-end: span 2;
   display: grid;
   grid-template-rows: 260px 1fr;
   grid-template-columns: 1fr;
@@ -258,13 +260,6 @@ section h1 {
 .font_3 {
   font-size: 16px;
   line-height: 20px;
-}
-
-#other_blog {
-  display: grid;
-  grid-template-rows: repeat(2, 475px);
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 24px;
 }
 
 #blog_one {
