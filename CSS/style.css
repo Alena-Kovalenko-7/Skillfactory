@@ -4,6 +4,11 @@ body {
   margin: 0;
 }
 
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 #orange_circle_big {
   background-image: url(../images/pink_circule_2.svg);
   width: 210px;
@@ -33,45 +38,38 @@ header {
   border-bottom: #EFF2F2 solid 2px;
 }
 
-main {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 section h1 {
   font-size: 48px;
   line-height: 56px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0px;
-  padding-right: 35px;
 }
 
 .head {
   display: flex;
   align-items: center;
-  width: 1200px;
   height: 76px;
-  margin: 0 auto;
 }
 
 .head #logo {
   background-image: url(../images/logo.svg);
   background-size: cover;
-  width: 50px;
-  height: 35px;
+  background-repeat: no-repeat;
+  width: 51px;
+  height: 36px;
 }
 
 .head .menu {
   display: flex;
+  justify-content: space-between;
+  grid-gap: 32px;
   list-style-type: none;
-  width: 704px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
-  size: 16px;
   border: none;
   padding: 12px 40px;
-  justify-content: space-around;
 }
 
 #material {
@@ -120,11 +118,13 @@ section h1 {
 .breadcrumb li {
   display: flex;
   list-style-type: none;
-  line-height: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .breadcrumb li:not(:first-child):before {
-  margin: 10px;
+  margin: 4px 10px;
   content: "";
   width: 6px;
   height: 6px;
@@ -191,7 +191,6 @@ section h1 {
 
 .self {
   display: flex;
-  /* position: relative; */
   list-style-type: none;
   width: fit-content;
   font-size: 14px;
@@ -316,11 +315,6 @@ section h1 {
 
   footer {
     background-color: #2963A3;
-  }
-
-  .foot {
-    width: 1200px;
-    margin: 0 auto;
   }
 
   .foot_menu {
@@ -491,13 +485,17 @@ section h1 {
     
   aside {
     grid-area: sidebar;
-    margin-top: 15px;
   }
 
   aside > div {
-    display: inline-block ;
-    width: 282px;
-    height: 512px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 16px;
+        /* height: 512px; */
+  }
+
+  aside > div > div {
+    margin: 24px;
     border-radius: 16px;
   }
 
@@ -512,9 +510,11 @@ section h1 {
 
   #people_3 {
     background-image: url(../images/3_people.png);
-    width: 257px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* width: 257px; */
     height: 206px;
-    margin: 30px auto;
   }
 
   #content_sidebar_text_1 {   
@@ -522,7 +522,7 @@ section h1 {
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    padding: 0 35px;
+    margin: 23px 0;
   }
  
   #content_sidebar_text_2 {   
@@ -530,20 +530,17 @@ section h1 {
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    padding: 0 35px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
 
   .content_sidebar_block_1_details {
-    display: flex;
     font-weight: 700;
     color: #FFFFFF;
     text-decoration: none;
     background: #35B3A9;
     transition: 0.2s;
     border: none;
-    width: 234px;
-    height: 48px;
+    width: 100%;
     padding: 10px;
     border-radius: 4px;
     justify-content: center;
@@ -551,7 +548,7 @@ section h1 {
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    margin: 20px auto;
+    margin-top: 20px;
   }
 
   .content_sidebar_block_2 {
@@ -577,12 +574,9 @@ section h1 {
 
   .content_sidebar_block_2_foto {
     height: 120px;
-    margin: 20px auto; 
   }
 
   .content_sidebar_texts {
-    width: 250px;
-    height: 300px;
     text-align: center;
     margin: 20px auto; 
   }
@@ -607,10 +601,12 @@ section h1 {
     line-height: 20px;
     text-align: center;
     color: #A2A7B1;
-    border: 20px 0;
-    box-shadow: 0px 1px 0px 0px #DEDEDE;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #DEDEDE;
     padding-bottom: 15px;
+  }
+
+  .content_sidebar_texts h4 {
+    text-align: left;
   }
 
   .content_sidebar_text_6 {
@@ -649,7 +645,7 @@ section h1 {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    border-radius: 6px 0px 0px 0px;
+    border-radius: 6px;
     padding: 0px 6px;
     margin: 8px 12px;
     position: relative;
@@ -750,16 +746,9 @@ section h1 {
     margin-top: 22px;
   }
 
-
-
-
-
-
-
   .content_blog {
     grid-area: main;
     width: 690px;
-    height: 4920px;
   }
   
   h2 {
@@ -776,8 +765,7 @@ section h1 {
   }
   
   #blog_picture_one {
-    background-image: url(../images/Image_4_blog.png);
-    width: 690px;
+    background-image: url(../images/Image_4_blog.png); 
     height: 331px;
     background-repeat:no-repeat;
   }

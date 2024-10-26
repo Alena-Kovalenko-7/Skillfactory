@@ -1,5 +1,5 @@
 @media screen and (max-device-width: 320px) {
-    .head, main, .foot {
+    .center {
         margin: 0 16px;
     }
     .foot_menu_news form input[type=submit] {
@@ -74,7 +74,7 @@
     .head button {
         display: none;
     }
-    .head, main, .foot {
+    .center {
         width: auto !important;
         margin: 0 20px;
     }
@@ -177,7 +177,20 @@
 }
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1280px) {
-    .head, main, .foot {
+    .center {
         width: 960px;
+    }
+    .head .menu {
+        grid-gap: 15px;
+    }
+    .content {
+        grid-template-columns: 1fr 222px;
+    }
+    .content_blog {
+        width: 714px;
+    }
+    #people_3 {
+        width: 181px;
+        height: 145px;
     }
 }

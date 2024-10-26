@@ -6,12 +6,11 @@
     <title>Blog</title>
     <link rel="stylesheet" href="../CSS/font.css">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style_mob.css">
 </head>
 <body>
-    <div id="orange_circle_big"></div>
-    <div id="orange_circle_small"></div>
     <header>
-        <div class="head">
+        <div class="head center">
             <div id="logo"></div>
             <div class="menu">
                 <div><a href="#">О нас</a></div>
@@ -25,68 +24,13 @@
             <button>Подобрать психолога</button>
         </div>
     </header>
-    <main>
+    <main class="center">
         <ul class="breadcrumb">
             <li><a href="#">Главная</a></li>
-            <li><a href="#">Блог</a></li>
+            <li><a href="main.html">Блог</a></li>
             <li><a href="#">Как не утонуть в тревоге и управлять своими страхами</a></li>
         </ul> 
         <div class="content">
-            <aside class="content_sidebar">
-                <div class="content_sidebar_block_1">
-                    <div id="people_3"></div>
-                    <div id="content_sidebar_text_1">Загружаем свободные окошки</div>
-                    <div id="content_sidebar_text_2">Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick, через который удобно выбрать дату,  время встречи и оплатить её</div>
-                    <button class="content_sidebar_block_1_details">Подробнее</button>
-                </div>
-                <div class="content_sidebar_block_2">
-                    <div class="content_sidebar_block_2_foto">
-                        <div id="foto_liliya"></div>
-                        <div class="content_sidebar_block_2_sms">
-                            <div id="icon_sms"></div>
-                            <div>Переписка</div>
-                        </div>
-                        <div class="content_sidebar_block_2_sms">
-                            <div id="icon_video"></div>
-                            <div>Видео</div>
-                        </div>   
-                    </div>
-                    <div class="content_sidebar_texts">
-                        <div id="content_sidebar_text_3">Лилия</div>
-                        <div id="content_sidebar_text_4">Психолог</div>
-                        <div id="content_sidebar_text_5">Опыт 6 лет &middot; 43 года</div>
-                        <h4>С чем работает психолог</h4>
-                        <ul class="content_sidebar_text_6">
-                            <li><span>Тревога, тревожности</span></li>
-                            <li><span>Подавленность</span></li>
-                            <li><span>Тревога и панические атаки</span></li>
-                        </ul>
-                        <button class="content_sidebar_block_1_details">Подробнее</button>
-                    </div>
-                    
-                </div>
-                <div id="content_sidebar_block_3"></div> 
-                <div class="content_sidebar_block_4">
-                    <div class="content_sidebar_text_10">
-                        <div id="content_sidebar_text_7">8 видео сессий</div>
-                        <div id="content_sidebar_text_8">Проработать небольшие проблемы и продвинуться в решении сложных запросов</div>
-                        <div id="content_sidebar_text_9">18 500 ₽</div>
-                        <button id="buy">Купить</button>
-                    </div>
-                </div>                
-                            
-
-
-
-
-
-
-
-
-
-
-
-            </aside>
             <section class="content_blog">
                 <h1>Как не утонуть в тревоге и управлять своими страхами</h1>
                 <div>
@@ -113,15 +57,6 @@
                                 </ul>
                             </li>
                         </ul>
-                        <!-- <p id="table_text_2">
-                            <a href="#">Под под заголовок под заголовком</a>
-                            <p id="table_text_3">
-                                <a href="#">Под под под заголовок под заголовком</a>
-                                <p id="table_text_4">
-                                    <a href="#">Под под под под заголовок под заголовком</a>
-                                </p>
-                            </p>
-                        </p> -->
                     </li>
                     <li class="content_blog_table_text_1"><a href="#">Ну вот опять заголовок который как "привет мама"</a></li>
                     <li class="content_blog_table_text_1"><a href="#">Как понять, что вы страдаете от материнской травмы?</a></li>
@@ -134,8 +69,6 @@
                 </div>
                 <div class="quote">
                     <div id="quote_blog"></div>
-                    <!-- <p>Мы знаем, что нуждаться в помощи и поддержке в трудные периоды жизни абсолютно нормально для любого человека, и стремимся сделать психотерапию безопасной, удобной и доступной каждому</p>
-                    <p>Ана Крымская</p> -->
                 </div>
                 <h3>Что еще можно делать с тревогой?</h3>
                 <ul class="content_blog_text_3">
@@ -189,16 +122,12 @@
                         <p class="content_blog_text_7">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.</p>
                     </div>
                 </div>
-
                 <div id="lightning"></div>
-
                 <p class="content_blog_text_7">Одна из ключевых задач психотерапии как раз и заключается в том, чтобы этот репертуар расширять и обучать человека пользоваться доступными ему реакциями в той последовательности, пропорции и объеме, которые подходят именно ему. Без оглядки на то, "как правильно" или "как у других".</p>
-               
                 <div class="content_blog_green">
                     <p class="content_blog_text_7"><strong>Упражнение #1</strong></p>
                     <p class="content_blog_text_7">Нужно последовательно напрягать и расслаблять каждую мышцу в теле на несколько секунд. Напрягать стоит довольно сильно, чтобы потом отчетливее ощущать расслабляющий эффект. Начать можно с пальцев ног и постепенно подниматься вверх. Смысл в том, чтобы через напряжение дать стрессу выход, а затем вновь привести себя в спокойное состояние через расслабление</p>
                 </div>
-
                 <div class="content_blog_text_9">                    
                     <p>
                         <a href="#">Self</a> &middot;
@@ -213,6 +142,58 @@
                     </p>
                 </div>   
             </section>
+            <aside class="content_sidebar">
+                <div class="content_sidebar_block_1">
+                    <div>
+                        <div id="people_3"></div>
+                        <div id="content_sidebar_text_1">Загружаем свободные окошки</div>
+                        <div id="content_sidebar_text_2">Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick, через который удобно выбрать дату,  время встречи и оплатить её</div>
+                        <button class="content_sidebar_block_1_details">Подробнее</button>
+                    </div>
+                </div>
+                <div class="content_sidebar_block_2">
+                    <div>
+                        <div class="content_sidebar_block_2_foto">
+                            <div>
+                                <div id="foto_liliya"></div>
+                                <div class="content_sidebar_block_2_sms">
+                                    <div id="icon_sms"></div>
+                                    <div>Переписка</div>
+                                </div>
+                                <div class="content_sidebar_block_2_sms">
+                                    <div id="icon_video"></div>
+                                    <div>Видео</div>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="content_sidebar_texts">
+                            <div>
+                                <div id="content_sidebar_text_3">Лилия</div>
+                                <div id="content_sidebar_text_4">Психолог</div>
+                                <div id="content_sidebar_text_5">Опыт 6 лет &middot; 43 года</div>
+                                <h4>С чем работает психолог</h4>
+                                <ul class="content_sidebar_text_6">
+                                    <li><span>Тревога, тревожности</span></li>
+                                    <li><span>Подавленность</span></li>
+                                    <li><span>Тревога и панические атаки</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="content_sidebar_block_1_details">Подробнее</button>
+                    </div>
+                </div>
+                <div id="content_sidebar_block_3"></div> 
+                <div class="content_sidebar_block_4">
+                    <div>
+                        <div class="content_sidebar_text_10">
+                            <div id="content_sidebar_text_7">8 видео сессий</div>
+                            <div id="content_sidebar_text_8">Проработать небольшие проблемы и продвинуться в решении сложных запросов</div>
+                            <div id="content_sidebar_text_9">18 500 ₽</div>
+                            <button id="buy">Купить</button>
+                        </div>
+                    </div>
+                </div>                
+            </aside>
             <section class="content_review">
                 <div class="content_review_keep">                    
                     <p id="problem">Откликается проблема?</p>
@@ -220,12 +201,11 @@
                     <button>Подобрать психолога</button>
                 </div>
                 <div id="people"></div>
-                 
             </section>
          </div>
     </main>
     <footer>
-        <div class="foot">
+        <div class="center">
             <div class="foot_menu">
                 <div class="foot_menu_info">
                     <p><a href="#">О нас</a></p>
@@ -267,5 +247,7 @@
             </ul>
         </div>
     </footer>
+    <div id="orange_circle_big"></div>
+    <div id="orange_circle_small"></div>
 </body>
 </html>
