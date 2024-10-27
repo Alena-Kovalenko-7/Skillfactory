@@ -113,6 +113,7 @@ section h1 {
   display: flex;
   margin: 20px 0; 
   padding: 0;
+  overflow: hidden;
 }
 
 .breadcrumb li {
@@ -138,6 +139,8 @@ section h1 {
 .breadcrumb li a {
   color: #333333B2;
   text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .filter {
@@ -766,17 +769,21 @@ section h1 {
   
   #blog_picture_one {
     background-image: url(../images/Image_4_blog.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     height: 331px;
-    background-repeat:no-repeat;
   }
 
-  .content_blog_table {
+  ul.content_blog_table {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     text-align: left;
-    width: 588px;
     text-decoration: underline;
+    width: 90%;
+    margin-left: 30px;
+    padding: 0px;
   }
 
   ul.content_blog_table li {
@@ -799,10 +806,11 @@ section h1 {
   }
 
   #quote_blog {
-    background-image: url(../images/quote.svg);
-    width: 690px;
+    background-image: url(../images/quote.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     height: 162px;
-    background-repeat:no-repeat;
   }
 
   .content_blog_text_3 {
@@ -822,7 +830,7 @@ section h1 {
 
   #blog_picture_two {
     background-image: url(../images/image_blog_2.png);
-    width: 690px;
+    width: 100%;
     height: 331px;
     background-repeat:no-repeat;
   }
@@ -835,7 +843,7 @@ section h1 {
     color: #868686;
   }
 
-  .content_blog_text_5 {
+  p.content_blog_text_5 {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -852,7 +860,7 @@ section h1 {
 
   .content_blog_text_6 {
     display: flex;
-    justify-content: center;
+    align-items: center;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -863,8 +871,7 @@ section h1 {
   .content_blog_text_6 p {
     display: grid;
     justify-content: center;
-    width: 485px;
-    height: 96px;
+    width: 100%;
   }
 
   .content_blog_text_7 {
@@ -877,8 +884,10 @@ section h1 {
 
   .content_blog_text_7 #blog_picture_three {
     background-image: url(../images/image_blog_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 282px;
-    height: 380px;
+    aspect-ratio : 282/380;
     float: left;
     margin-right: 25px;
   }
@@ -900,8 +909,10 @@ section h1 {
 
   #blog_picture_four {
     background-image: url(../images/image_blog_4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 281px;
-    height: 174px;
+    aspect-ratio : 281/174;
     float: left;
     margin: 0 25px 20px 0;
   }
@@ -915,12 +926,8 @@ section h1 {
   #blog_picture_grid {
     display: flex;
     justify-content: space-between;
-    height: 451px;
+    column-gap: 20px;
     margin-top: 24px;
-  }
-
-  #blog_picture_grid > div {
-    width: 333px;
   }
 
   #blog_picture_grid > div > .image {
