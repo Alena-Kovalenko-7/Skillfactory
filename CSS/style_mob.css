@@ -21,6 +21,7 @@
 @media screen and (device-width: 414px) {
     .content_blog_text_7 #blog_picture_three {
         aspect-ratio : 1/1;
+        background-position-y: center;
     }
 }
 
@@ -63,6 +64,10 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+    #blog_picture_two {
+        height: auto;
+        aspect-ratio : 288/160;
+      }
     #blog_picture_four {
         width: 100%;
         aspect-ratio : 288/160;
@@ -75,6 +80,9 @@
     #quote_blog {
         background-image: url(../images/quote_414.png);
         height: 218px;
+    }
+    .content_blog_green {
+        padding: 16px;
     }
 }
 
@@ -92,6 +100,18 @@
     }
     .foot_menu_news form {        
         width: 80%;
+    }
+    aside {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 481px 242px;
+        gap: 24px;
+    }
+    aside > div:not(:first-child) {
+        margin-top: 0;
+    }
+    #content_sidebar_block_3 {
+        height: 100%;
     }
 }
 
@@ -225,9 +245,13 @@
             "main"
             "sidebar" !important;
         grid-template-columns: 1fr;
+        row-gap: 30px;
     }
     .content_blog {
         width: 100%;
+    }
+    #content_sidebar_block_3 {
+        background-image: url(../images/gifts_374.png);
     }
 }
 
@@ -236,11 +260,10 @@
         grid-template-areas:
             "main sidebar";
     }
-    .content_review, #orange_circle_big, #orange_circle_small {
-        display:
-         none;
+    .content_review, #orange_circle_big, #orange_circle_small, .content_blog_text_9 {
+        display: none;
     }
-    .content_blog_text_8 {
+    li.content_blog_text_8 {
         padding-right: 0;
     }
     ul.content_blog_table ul {
@@ -264,5 +287,11 @@
     #people_3 {
         width: 181px;
         height: 145px;
+    }
+    .content_sidebar_block_4 {
+        background-image: url(../images/gift_3_1024.png), url(../images/gift_2_1024.png);
+    }
+    .content_sidebar_text_10 {
+        margin: 24px;
     }
 }

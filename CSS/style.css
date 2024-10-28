@@ -317,6 +317,8 @@ section h1 {
   }
 
   footer {
+    margin-top: 50px;
+    margin-top: 50px;
     background-color: #2963A3;
   }
 
@@ -533,7 +535,6 @@ section h1 {
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    /* margin-top: 10px; */
   }
 
   .content_sidebar_block_1_details {
@@ -551,7 +552,7 @@ section h1 {
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 16px;
   }
 
   .content_sidebar_block_2 {
@@ -581,7 +582,7 @@ section h1 {
 
   .content_sidebar_texts {
     text-align: center;
-    margin: 20px auto; 
+    margin-top: 10px; 
   }
 
   #content_sidebar_text_3 {
@@ -612,12 +613,13 @@ section h1 {
     text-align: left;
   }
 
-  .content_sidebar_text_6 {
+  ul.content_sidebar_text_6 {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     text-align: left;
     padding-left: 20px;
+    margin: 0;
   }
 
   ul.content_sidebar_text_6 li {
@@ -633,12 +635,14 @@ section h1 {
     margin-bottom: 10px;
   }
 
-  #icon_sms {
-    background-image: url(../images/sms.svg);
-    background-size: contain;
+  .icon_16 {
     width: 16px;
-    height: 24px;
+    height: 16px;
     margin-right: 5px;
+  }
+
+  #icon_sms {
+    background-image: url(../images/correspondence.png);
   }
 
   .content_sidebar_block_2_sms {
@@ -660,11 +664,7 @@ section h1 {
   }
 
   #icon_video {
-    background-image: url(../images/video.svg);
-    background-size: contain;
-    width: 16px;
-    height: 24px;
-    margin-right: 5px;
+    background-image: url(../images/video.png);
   }
 
   .content_sidebar_block_2_video {
@@ -683,13 +683,14 @@ section h1 {
   }
 
   #content_sidebar_block_3 {
-    background-image: url(../images/gifts_1.svg);
+    background-image: url(../images/gifts.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 292px;
   }
 
   .content_sidebar_block_4 {
-    display: grid;
-    height: 304px;
     border: 1px solid #DEDEDE; 
     background-image: url(../images/gift_3.svg), url(../images/gift_2.svg);
     background-position: right bottom;
@@ -697,10 +698,7 @@ section h1 {
   }
 
   .content_sidebar_text_10 {
-    width: 218px;
-    height: 240px;
-    margin: 0 auto;
-    padding-top: 30px;
+    margin: 32px;
   }
 
   #content_sidebar_text_7 {   
@@ -717,9 +715,7 @@ section h1 {
     font-weight: 400;
     line-height: 20px;
     text-align: left;
-    margin-top: 22px;
-    width: 196px;
-    height: 80px;
+    margin: 12px 0;
   }
 
   #content_sidebar_text_9 {
@@ -746,7 +742,7 @@ section h1 {
     font-weight: 700;
     line-height: 24px;
     align-items: end;
-    margin-top: 22px;
+    margin-top: 24px;
   }
 
   .content_blog {
@@ -817,11 +813,15 @@ section h1 {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   ul.content_blog_text_3 li {
     color: #03B2A5;
+  }
+
+  ul.content_blog_text_3 li:not(:first-child) {
+    margin-top: 20px;
   }
 
   ul.content_blog_text_3 li span {
@@ -830,9 +830,10 @@ section h1 {
 
   #blog_picture_two {
     background-image: url(../images/image_blog_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 331px;
-    background-repeat:no-repeat;
   }
 
   #content_blog_text_4 {
@@ -902,8 +903,7 @@ section h1 {
     border-radius: 16px;
   }
 
-  .content_blog_text_8 {
-    padding-left: 20px;
+  li.content_blog_text_8 {
     padding-right: 100px;
   }
 
@@ -957,7 +957,7 @@ section h1 {
     height: 32px;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 24px 0;
+    margin-bottom: 24px;
   }
 
   .content_blog_green {
