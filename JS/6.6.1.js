@@ -1,21 +1,20 @@
 //Задание 6.6.1
 
-let word = prompt('Введите слово');
-let wordNew = word.toLowerCase();
-wordNew = wordNew.replace(/\s/g, "");
-let arrWord = Array.from(wordNew);
-let reversArrWord = Array.from(wordNew).reverse();
+const word = prompt('Введите слово');
+let processedWord = word.toLowerCase();
+processedWord = processedWord.replace(/\s/g, "");
+const arrayWord = Array.from(processedWord);
+const reversArrayWord = Array.from(processedWord).reverse();
 
 let isPalindrome = true;
-for (let [position, letter] of arrWord.entries()) {
-    let letterRevers = reversArrWord[position];
-    if (letter !== letterRevers) {
+for (let i = 0; i < arrayWord.length; i++) {
+    if (arrayWord[i] !== reversArrayWord[i]) {
         isPalindrome = false;
         break;
     }
 }
-let not = "";
-if (!isPalindrome) {
-    not = "не ";
+if (isPalindrome) {
+    console.log(`Слово "${word}" является палиндромом`);
+} else {
+    console.log(`Слово "${word}" не является палиндромом`);
 }
-console.log(`Слово "${word}" ${not}является палиндромом`);
