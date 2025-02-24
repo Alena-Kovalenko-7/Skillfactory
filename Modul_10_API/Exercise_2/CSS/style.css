@@ -1,0 +1,22 @@
+.btn {
+  width: 150px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  
+  display: flex;
+  text-transform: uppercase;
+  color: white;
+  background: #6a31fb;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
