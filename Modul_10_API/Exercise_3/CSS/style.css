@@ -1,3 +1,7 @@
+head, body {
+  font-family: Arial;
+}
+
 .chat {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
@@ -28,7 +32,24 @@ button {
   border: 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
 
+.chat-container > div {
+  font-size: 12px;
+  border: 2px solid #3197fb66;
+  opacity: 0,5;
+  border-radius: 5px;
+  padding: 5px 10px;
+  row-gap: 10px;
+  margin: 5px 5px;
+  width: fit-content;
+}
+
+.chat-container-user {
+  justify-self: end;
+}
 
 
 

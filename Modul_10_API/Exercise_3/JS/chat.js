@@ -1,8 +1,19 @@
-function addImage() {
-  const imageUrl = document.querySelector(".massage").value;
-  const imageElement = `<img src="${imageUrl}"/>`;
+const wsUrl = 'wss://echo-ws-service.herokuapp.com'
 
-  const imageContainer = document.querySelector(".image-container");
-  imageContainer.innerHTML = imageElement;
-  document.querySelector(".massage").value = "";
-}
+const btnSend = document.querySelector('.btn-send')
+const input = document.querySelector(".chat-massage");
+const btnGeo = document.querySelector('.btn-geolocation')
+const chatConteiner = document.querySelector('.chat-container')
+
+let websocket;
+
+
+btnSend.addEventListener("click", () => {
+    if (input.value.length == 0) return;
+    const divMessageUser = document.createElement("div");
+    divMessageUser.classList.add("chat-container-user");
+    divMessageUser.textContent = input.value;
+    chatConteiner.appendChild(divMessageUser);
+    console.log(input.value);
+    input.value = "";
+  });
