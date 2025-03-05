@@ -6,6 +6,7 @@ const input = document.querySelector(".chat-massage");
 const btnGeo = document.querySelector('.btn-geolocation')
 const chatConteiner = document.querySelector('.chat-container')
 
+
 let websocket;
 openWebSocket();
   
@@ -49,4 +50,35 @@ function writeToScreen(message, typeMessage = "user") {
   chatConteiner.appendChild(divMessage);
   console.log(message);
 }
+
+// Функция, выводящая текст об ошибке
+const error = () => {
+  writeToScreen('Невозможно получить ваше местоположение');
+}
+
+// Функция, срабатывающая при успешном получении геолокации
+const success = (position) => {
+  console.log('position', position);
+  const latitude  = position.coords.latitude;
+  const longitude = position.coords.longitude;
+
+  const mapLink = document.createElement("a");
+  mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+  mapLink.textContent = 'Гео-локация';
+  mapLink.target = '_blank';
+
+  const divMessage = document.createElement("div");
+  divMessage.classList.add("chat-container-user");
+  divMessage.appendChild(mapLink);
+
+  chatConteiner.appendChild(divMessage);
+}
+
+btnGeo.addEventListener('click', () => {
+  if (!navigator.geolocation) {
+    writeToScreen('Geolocation не поддерживается вашим браузером');
+  } else {
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+});
   

@@ -19,12 +19,6 @@ input.chat-massage {
   outline: none !important;
 }
 
-.chat-container {
-  border: #3197fb66 solid 5px;
-  opacity: 0,5;
-  grid-column: span 3;
-}
-
 button {
   background-color: #3197fb66;
   opacity: 0,5;
@@ -34,6 +28,12 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+.chat-container {
+  border: #3197fb66 solid 5px;
+  opacity: 0,5;
+  grid-column: span 3;
 }
 
 .chat-container > div {
@@ -47,49 +47,10 @@ button:hover {
   width: fit-content;
 }
 
+.chat-container > div:first-child {
+  display: none;
+}
+
 .chat-container-user {
   justify-self: end;
 }
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
-.btn {
-  width: 100px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  box-shadow: none;
-  cursor: pointer;
-  
-  display: flex;
-  text-transform: uppercase;
-  color: white;
-  background: #d631fb;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-.btn_icon {
-  width: 30px;
-  height: 30px;
-  margin: 10px auto;
-}
-
-.hidden {
-  display: none;
-} */
