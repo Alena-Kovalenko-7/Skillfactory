@@ -2,7 +2,7 @@
 const wsUri = 'wss://echo.websocket.org/';
 
 const btnSend = document.querySelector('.btn-send')
-const input = document.querySelector(".chat-massage");
+const input = document.querySelector(".chat-message");
 const btnGeo = document.querySelector('.btn-geolocation')
 const chatConteiner = document.querySelector('.chat-container')
 
