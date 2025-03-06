@@ -43,12 +43,16 @@ function openWebSocket()
   };
 }
 
-function writeToScreen(message, typeMessage = "user") {
+function writeToScreen(content, typeMessage = "user") {
   const divMessage = document.createElement("div");
-  divMessage.textContent = message;
+  if (typeof(content) === 'string') {
+    divMessage.textContent = content;
+    console.log(content);
+  } else {
+    divMessage.appendChild(content);
+  }
   divMessage.classList.add("chat-container-" + typeMessage);
   chatConteiner.appendChild(divMessage);
-  console.log(message);
 }
 
 // Функция, выводящая текст об ошибке
@@ -67,11 +71,7 @@ const success = (position) => {
   mapLink.textContent = 'Гео-локация';
   mapLink.target = '_blank';
 
-  const divMessage = document.createElement("div");
-  divMessage.classList.add("chat-container-user");
-  divMessage.appendChild(mapLink);
-
-  chatConteiner.appendChild(divMessage);
+  writeToScreen(mapLink);
 }
 
 btnGeo.addEventListener('click', () => {
