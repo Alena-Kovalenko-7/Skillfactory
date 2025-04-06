@@ -1,0 +1,17 @@
+@media screen and (max-device-width: 320px) {
+    body {
+        margin: 0 16px !important;
+    }
+}
+@media screen and (max-device-width: 414px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-device-width: 768px) {
+    body {
+        width: auto !important;
+        margin: 0 20px;
+        overflow-y: scroll;
+    }
+}
