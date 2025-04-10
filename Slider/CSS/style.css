@@ -8,7 +8,6 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: red solid 2px; ;
   width: 1178px;
   height: 553px;
   margin-top: 25px;
@@ -26,19 +25,13 @@ main {
   grid-row-gap: 30px;  
 }
 
-.slider__type_number {
+.slider__name_room {
   display: flex;
   justify-content: space-between;  
   width: 623px;
   height: 24px;
   font-size: 14px;
-  color: #E3B873;
-}
-
-.slider__type_number_1, 
-.slider__type_number_2,
-.slider__type_number_3 {
-  margin: 0;
+  color: #FFFFFF4D;
 }
 
 .slider__text p {
@@ -76,8 +69,7 @@ main {
 .slider__description_room {
   font-family: Yeseva One;
   line-height: 139%;
-  letter-spacing: -7%;
-  /* text-transform: uppercase; */
+  letter-spacing: -7%;  
   color: #E3B873;
   padding-left: 0px;
 }
@@ -102,16 +94,8 @@ main {
   position: relative;
   grid-row: span 3;
   width: 679px;
-  height: 483px;
-  border: yellow solid 2px;
+  height: 483px;  
   background-size: cover;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.slider__images_1 {  
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
@@ -142,18 +126,6 @@ img {
 .slider__switch {
   display: flex;
   align-items: center;
-}
-
-.slider__images-title {
-  /* position: absolute; */
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  text-align: center;
-  z-index: 1;
-  padding: 7px 0;
 }
 
 .slider__switch_arrow:hover {
@@ -195,11 +167,10 @@ img {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
+.slider__name_room_item:hover {
+  cursor: pointer;
+}
+.slider__name_room .active {
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+}

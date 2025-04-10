@@ -4,21 +4,24 @@ let images = [
     description__city: "Rostov-on-Don<br/> LCD admiral",
     description__apartament: "81 m2",
     description__time: "3.5 months",
-    description__cost: "Upon request"
+    description__cost: "Upon request",
+    name__room: "ROSTOV-ON-DON ADMIRAL"
   },
   {
     url: "../images/image_2.png",
     description__city: "Sochi<br/> Thieves",
     description__apartament: "105 m2",
     description__time: "4 months",
-    description__cost: "Upon request"
+    description__cost: "Upon request",
+    name__room: "SOCHI THIEVES"
   },
   {
     url: "../images/image_3.png",
     description__city: "Rostov-on-Don<br/> Patriotic",
     description__apartament: "93 m2",
     description__time: "3 months",
-    description__cost: "Upon request"
+    description__cost: "Upon request",
+    name__room: "ROSTOV-ON PATROITIC"
   }
 ];
 
@@ -30,13 +33,13 @@ let sliderImages = document.querySelector(".slider__images"); //картинки
 let sliderDescription = document.querySelector(".slider__description_room"); //описание комнат
 let sliderArrows = document.querySelectorAll(".slider__switch_arrow"); // стрелки
 let sliderDots = document.querySelector(".slider__switch_dots"); // точки
-let sliderTypeNumber = document.querySelector(".slider__type_number"); //типы номеров
+let sliderNameRoom = document.querySelector(".slider__name_room"); //типы номеров
 
 initImages();
 initArrows(); 
 initDots(); 
 initTitles();
-initTypeNumbers();
+initNameRoom();
 
 function initImages() {
   images.forEach((image, index) => {        
@@ -58,16 +61,16 @@ function initImages() {
 function initArrows() {
   sliderArrows.forEach(arrow => {
     arrow.addEventListener("click", function() {
-      let curNumber = +sliderImages.querySelector(".active").dataset.index; 
-      let nextNumber; //переменная, которая отвечает за следующее изображение, которое мы хотим отобразить
+      let curRoom = +sliderImages.querySelector(".active").dataset.index; 
+      let nextRoom; //переменная, которая отвечает за следующее изображение, которое мы хотим отобразить
       
       //если левая стрелка - идем назад, если правая - идем вперед    
       if (arrow.classList.contains("left")) {
-        nextNumber = curNumber === 0? images.length - 1 : curNumber - 1; 
+        nextRoom = curRoom === 0? images.length - 1 : curRoom - 1; 
       } else {
-        nextNumber = curNumber === images.length - 1? 0 : curNumber + 1; 
+        nextRoom = curRoom === images.length - 1? 0 : curRoom + 1; 
       }
-      moveSlider(nextNumber); // отдельная функция для переключения изображений
+      moveSlider(nextRoom); // отдельная функция для переключения изображений
     });
   });
 }
@@ -92,6 +95,26 @@ function initDots() {
   })
 }
 
+function initNameRoom() {
+  images.forEach((image, index) => {     
+    let name = document.createElement('div');
+    name.className = "slider__name_room_item";
+    name.className += ` n${index}`;
+    name.className += (index === 0 ? " active" : "");
+    name.dataset.index = index;
+    name.innerHTML = image.name__room;
+    
+    sliderNameRoom.append(name);
+});
+
+   //ставим обработчик на каждую точку, обрабатываем клик по точке
+  sliderNameRoom.querySelectorAll(".slider__name_room_item").forEach(name => {
+    name.addEventListener("click", function() {
+      moveSlider(this.dataset.index); // каждый тип номера является ссылкой на картинку, которая должна открыться
+    })
+  })
+}
+
 // определим функцию moveSlider, num - число номер слайда, который мы хотим показать
 function moveSlider(num) {
   sliderImages.querySelector(".active").classList.remove("active"); // ищем класс active и убираем у него этот класс
@@ -102,12 +125,11 @@ function moveSlider(num) {
   sliderDots.querySelector(".n" + num).classList.add("active");
   
   //когда переключаются стрелки, типы номеров сверху тоже должны переключаться
-  sliderTypeNumber.querySelector(".active").classList.remove("active");
-  sliderTypeNumber.querySelector(".n" + num).classList.add("active");
+  sliderNameRoom.querySelector(".active").classList.remove("active");
+  sliderNameRoom.querySelector(".n" + num).classList.add("active");
   
   changeTitle(num);
 }
-
 
 // сделаем чтобы первичные данные сразу отображались на первом листе
 function initTitles() {  
